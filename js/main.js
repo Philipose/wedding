@@ -9,6 +9,7 @@ jQuery(document).ready(function($) {
 	"use strict";
 
 	$('#banner').load('html/banner.html');
+	$('#footer').load('html/footer.html');
 
 	var siteMenuClone = function() {
 
