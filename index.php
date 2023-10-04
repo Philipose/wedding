@@ -45,33 +45,7 @@
     </div>
 
 
-    <header class="site-navbar py-4" role="banner">
-
-      <div class="container">
-        <div class="d-flex align-items-center">
-          <div class="site-logo">
-            <a href="index.html">
-              <img src="images/logo.png" alt="Logo">
-            </a>
-          </div>
-          <div class="ml-auto">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li class="active"><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="matches.html" class="nav-link">Matches</a></li>
-                <li><a href="players.html" class="nav-link">Players</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-              </ul>
-            </nav>
-
-            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right text-white"><span
-                class="icon-menu h3 text-white"></span></a>
-          </div>
-        </div>
-      </div>
-
-    </header>
+    <?php include "./header.html" ?>
 
     <div class="hero overlay" style="background-image: url('images/bg_3.jpg');">
       <div class="container">
@@ -92,50 +66,8 @@
     
     
     <div class="container">
-      
-
-      <div class="row">
-        <div class="col-lg-12">
-          
-          <div class="d-flex team-vs">
-            <span class="score">4-1</span>
-            <div class="team-1 w-50">
-              <div class="team-details w-100 text-center">
-                <img src="images/logo_1.png" alt="Image" class="img-fluid">
-                <h3>LA LEGA <span>(win)</span></h3>
-                <ul class="list-unstyled">
-                  <li>Anja Landry (7)</li>
-                  <li>Eadie Salinas (12)</li>
-                  <li>Ashton Allen (10)</li>
-                  <li>Baxter Metcalfe (5)</li>
-                </ul>
-              </div>
-            </div>
-            <div class="team-2 w-50">
-              <div class="team-details w-100 text-center">
-                <img src="images/logo_2.png" alt="Image" class="img-fluid">
-                <h3>JUVENDU <span>(loss)</span></h3>
-                <ul class="list-unstyled">
-                  <li>Macauly Green (3)</li>
-                  <li>Arham Stark (8)</li>
-                  <li>Stephan Murillo (9)</li>
-                  <li>Ned Ritter (5)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-
     <div class="latest-news">
       <div class="container">
-        <div class="row">
-          <div class="col-12 title-section">
-            <h2 class="heading">Latest News</h2>
-          </div>
-        </div>
         <div class="row no-gutters">
           <div class="col-md-4">
             <div class="post-entry">
