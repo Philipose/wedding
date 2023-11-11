@@ -1,14 +1,20 @@
-jQuery(document).ready(function($) {
-    var siteCountDown = function() {
+function countdown_spanner(time, unit){
+    return '<span class="label">' + time + ' ' + unit + '</span> ';
+};
+function new_countdown(target_date) {
+    var target_time = new Date(target_date).getTime();
+    var current_time = new Date().getTime();
+    var time_left = new Date(target_time - current_time);
 
-        $('#date-countdown').countdown('2024/05/04', function(event) {
-        var $this = $(this).html(event.strftime(''
-            + '<span class="countdown-block"><span class="label">%D</span> days </span>'
-            + '<span class="countdown-block"><span class="label">%H</span> hr </span>'
-            + '<span class="countdown-block"><span class="label">%M</span> min </span>'
-            + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
-        });
-                
+    return (countdown_spanner(Math.floor(time_left / (1000 * 60 * 60 * 24)), 'days')
+            + countdown_spanner(Math.floor((time_left % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)), 'hr')
+            + countdown_spanner(Math.floor((time_left % (1000 * 60 * 60)) / (1000 * 60)), 'min')
+            + countdown_spanner(Math.floor((time_left % (1000 * 60)) / 1000), 'sec')).trim();
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+    var siteCountDown = function() {
+        document.getElementById('date-countdown').innerHTML = new_countdown('2024/05/04');
     };
-    siteCountDown();
+    setInterval(siteCountDown, 1000);
 });
