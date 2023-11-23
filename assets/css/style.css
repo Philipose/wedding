@@ -77,7 +77,6 @@ h6 {
   width: 200px;
   transition: all ease-in-out 0.5s;
   z-index: 9997;
-  transition: all 0.5s;
   padding: 0 15px;
   background: #040b149b;
   opacity: 1;
@@ -536,7 +535,6 @@ section {
 }
 
 .portfolio #portfolio-flters {
-  padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
