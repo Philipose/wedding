@@ -312,7 +312,7 @@ section {
 }
 
 .section-bg {
-  background: rgb(101, 224, 177)
+  background: #71785c
 }
 
 .section-title {
@@ -531,7 +531,7 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .portfolio #portfolio-flters {
@@ -599,15 +599,15 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
-  font-size: 28px;
+  font-size: 14px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
+  background: #71785c;
   transition: 0.3s;
-  width: 50%;
+  width: 100%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: rgba(28, 97, 25, 0.75);
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
