@@ -5,14 +5,19 @@ function build_bridal_party() {
         'filter-bridesmaid': ['Kesia', 'Rebecca', 'Christie', 'Celia', 'Supriya', 'Minu', 'Reena', 'Shalini', 'Jocelyn', 'Erika'],
         'filter-groomsman': ['Michael', 'Stephen', 'Benjamin', 'Haris', 'George', 'Jeremy'],
     }
-    const honoured_attendants = ['Kesia', 'Rebecca', 'Michael', 'Stephen']
+    const honoured_attendants = {
+      'Kesia': "Maid of Honour",
+      'Rebecca': "Matron of Honour",
+      'Michael': "Best Man",
+      'Stephen': "Best Man",
+    }
     for (const [role, person] of Object.entries(bridal_party_data)) {
         for (const name of person) {
           document.getElementById('BridalPartyTable').innerHTML += `          <div id=${name} class="col-6 col-lg-3 col-md-6 portfolio-item ${role}">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/${name}.png" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a>${name}</a>
+              <a id=${name}_label>${name}</a>
             </div>
           </div>
         </div>
@@ -20,13 +25,14 @@ function build_bridal_party() {
         }
     }
 
-    for (const name of honoured_attendants){
-        add_honour(name)
+    for (const [person, title] of Object.entries(honoured_attendants)){
+        add_honour(person, title);
     }
 }
 
-function add_honour(id){
-    document.getElementById(id).classList.add('filter-honoured');
+function add_honour(person, title){
+    document.getElementById(person).classList.add('filter-honoured');
+    document.getElementById(person.toString() + '_label').innerHTML = person.toString() + " - " + title.toString();
 }
 
 function add_bridal_property(id, role){
