@@ -36,15 +36,7 @@ function add_honour(person, title){
 }
 
 function add_bridal_property(id, role){
-    const role_map = {
-        'Bridesmaid': {
-          'class': 'filter-bridesmaid',
-    
-        },
-        'Groomsman': 'groomsman',
-        'Honour': 'honour'
-    }
-    document.getElementById(id).classList.add(roles);
+    document.getElementById(id).classList.add(role);
 }
 
 function clear_bridal_party(){

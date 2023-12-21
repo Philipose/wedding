@@ -1,5 +1,12 @@
-#darkbox { width: 45vw; height:60vh; position:absolute;
-    top:0; left:200; background:#0e0e0e;; overflow: hidden; text-align:center;
+#darkbox {
+    width: 45vw;
+    height: 60vh;
+    position: absolute;
+    top: 0;
+    left: 200;
+    background: #0e0e0e;
+    overflow: hidden;
+    text-align: center;
     margin-left: 200px;
 }
 .darkboximg { padding:5%; max-width: 75vh; max-height: 75vw; }
@@ -19,8 +26,6 @@
     width: 100% !important;
     height: auto !important;
     margin-bottom:5px;
-    /* filter: grayscale(100%); */
-    /* transition: filter 0.5s; */
 }
 
 #gallery img:hover {
