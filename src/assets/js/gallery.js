@@ -17,7 +17,7 @@ function showDarkbox(url) {
         let y = window.scrollY + 50;
 
         // Create the darkBox
-        var div = document.createElement("div");
+        const div = document.createElement("div");
         div.id = "darkbox";
         div.innerHTML = '<img class="darkboximg" src="'+url+'" />';
         document.body.appendChild(div);
