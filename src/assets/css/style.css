@@ -315,6 +315,15 @@ section {
   background: #71785c
 }
 
+.section-busy-bg {
+  background: #71785c;
+  background-image: url('../img/dalle2.webp');
+  background-repeat: repeat;
+}
+.section-text-bg {
+  background:rgba(0, 0, 0, 0.1)
+}
+
 .section-title {
   padding-bottom: 30px;
 }
@@ -325,7 +334,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #e5e9ee;
 }
 
 .section-title h2::after {
