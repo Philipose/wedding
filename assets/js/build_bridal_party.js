@@ -33,7 +33,7 @@ function build_bridal_party() {
           last_name = name[1];
           document.getElementById('BridalPartyTable').innerHTML += `          <div id=${first_name} class="col-6 col-lg-3 col-md-6 portfolio-item ${role}">
           <div class="portfolio-wrap">
-            <img loading="lazy" src="assets/img/portfolio/${first_name}.webp" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/${first_name}.webp" loading="lazy" width="315" height= "315" class="img-fluid" alt="">
             <div class="portfolio-links">
               <a id=${first_name}_label>${first_name} ${last_name}</a>
             </div>
