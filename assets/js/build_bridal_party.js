@@ -1,5 +1,3 @@
-
-
 function build_bridal_party() {
     const bridal_party_data = {
         'filter-bridesmaid': [
@@ -35,7 +33,7 @@ function build_bridal_party() {
           last_name = name[1];
           document.getElementById('BridalPartyTable').innerHTML += `          <div id=${first_name} class="col-6 col-lg-3 col-md-6 portfolio-item ${role}">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/${first_name}.webp" class="img-fluid" alt="">
+            <img loading="lazy" src="assets/img/portfolio/${first_name}.webp" class="img-fluid" alt="">
             <div class="portfolio-links">
               <a id=${first_name}_label>${first_name} ${last_name}</a>
             </div>
@@ -53,10 +51,6 @@ function build_bridal_party() {
 function add_honour(person, title){
     document.getElementById(person).classList.add('filter-honoured');
     document.getElementById(person.toString() + '_label').innerHTML += "<br/>" + title.toString();
-}
-
-function add_bridal_property(id, role){
-    document.getElementById(id).classList.add(role);
 }
 
 function clear_bridal_party(){
