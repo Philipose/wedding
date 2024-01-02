@@ -3,7 +3,7 @@ function build_bridal_party() {
       {'FirstName': 'Kesia', 'LastName': 'George', 'Roles': ['Bridesmaid', 'Maid of Honour']},
       {'FirstName': 'Rebecca', 'LastName': 'Chacko', 'Roles': ['Bridesmaid', 'Matron of Honour']},
       {'FirstName': 'Christina', 'LastName': 'George', 'Roles': ['Bridesmaid']},
-      {'FirstName': 'Celia', 'LastName': 'George', 'Roles': ['Bridesmaid']},
+      {'FirstName': 'Celia', 'LastName': 'John', 'Roles': ['Bridesmaid']},
       {'FirstName': 'Supriya', 'LastName': 'Paidemarry', 'Roles': ['Bridesmaid']},
       {'FirstName': 'Minu', 'LastName': 'Pitchiah', 'Roles': ['Bridesmaid']},
       {'FirstName': 'Reena', 'LastName': 'Mathew', 'Roles': ['Bridesmaid']},
