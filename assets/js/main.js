@@ -131,16 +131,19 @@
    */
   const typed = select('.typed')
   if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
     new Typed('.typed', {
-      strings: typed_strings,
+      strings: ["Hi!","I'm Jasmine","I'm Aaron","We're the Philiposes... ","We're the Philiposes...almost"],
       loop: true,
       typeSpeed: 50,
       backSpeed: 20,
       backDelay: 2000
     });
   }
+
+  const lightbox = GLightbox({
+    selector: '#gallerybox'
+  });
+  
 
   /**
    * Skills animation
@@ -212,5 +215,7 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
+
+  timeline(document.querySelectorAll('.timeline'));
 
 })()
