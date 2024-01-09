@@ -16,10 +16,12 @@
   <link href="assets/img/favicon/apple-touch-icon.png" sizes="180x180" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lora&family=Quattrocento&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lora&display=swap">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lora&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -30,7 +32,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.min.css" rel="stylesheet">
-  <link href="assets/css/gallery.css" rel="stylesheet">
+  <!-- <link href="assets/css/gallery.css" rel="stylesheet"> -->
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -63,10 +65,10 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
     <div class="mt-auto hero-container align-self-center" data-aos="fade-in">
-      <h1 style="font-family: 'Cinzel Decorative', serif;">Jasmine & Aaron</h1>
-      <p><span style="font-display: swap; font-family: 'Lora', serif; white-space: pre;" class="typed" data-typed-items="Hi!,I'm Jasmine,I'm Aaron,We're the Philiposes... ,We're the Philiposes... <br/>almost"></span></p>
+      <h1>Jasmine & Aaron</h1>
+      <p><span class="typed"></span></p>
     </div>
-    <h3 style="font-display: swap; font-family: 'Lora', serif; text-align: center; min-height: 2.1rem;" class="mt-auto align-items-center hero-container fadeIn" id="date-countdown"></h3>
+    <h3 class="mt-auto align-items-center hero-container fadeIn" id="date-countdown"></h3>
   </section><!-- End Hero -->
 
 
@@ -91,15 +93,6 @@
         </div>
         <div id="BridalPartyTable" class="row portfolio-container" data-aos="fade-up" data-aos-delay="100"></div>
     </section><!-- End Portfolio Section -->
-    <!-- ======= Gallery Section ======= -->
-    <!-- <section id="Gallery" class="portfolio">
-      <div class="container">
-        <div class="section-title">
-          <h2 class="text-dark">Gallery</h2>
-        </div>
-      </div>
-    </section> -->
-    <!-- End Gallary Section -->
     <section id="location" class="contact">
       <div class="container">
 
@@ -143,7 +136,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-3">
             <br/><br/>
-            <button class="btn btn-primary w-100" disabled><a class="text-dark" target="_blank" href="https://withjoy.com/aaron-jasmine/rsvp" disabled>RSVP (Check Back Soon)</a></button>
+            <button class="btn btn-primary w-100" disabled><a class="text-dark" target="_blank" href="https://rsvp.aaronphilipose.com">RSVP (Check Back Soon)</a></button>
             <br/><br/>
             <button class="btn btn-secondary w-100"><a class="text-light"target="_blank" href="https://www.marriott.com/events/start.mi?id=1696343797128&key=GRP">Book Hotel Room</a></button>
             <br/><br/>
@@ -152,9 +145,8 @@
       </div>
     </section>
   </main><!-- End #main -->
-  
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/js/gallery.js"></script>
@@ -170,9 +162,10 @@
   <script src="assets/js/fslightbox.js"></script>
   <script src="assets/js/build_bridal_party.min.js"></script>
 
+  <script src="assets/js/timeline.prod.min.js"></script>
+  <link href="assets/css/timeline.min.css" rel="stylesheet" />
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
