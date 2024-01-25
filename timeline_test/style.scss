@@ -1,5 +1,5 @@
 $color-white:#fff;
-$brand-color-g:#348e80;
+$brand-color-g:#71785c;
 $brand-color:#df8625;
 
 @mixin respond-to($breakpoint) {
@@ -31,9 +31,9 @@ p {
 
 h1 {
     font-family: "Great Vibes", cursive;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 400;
-    color: #df8625;
+    color: $brand-color;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -55,8 +55,8 @@ h1 {
                     height: 10px;
                     border-radius: 100%;
                     position: absolute;
-                    top: 130px !important;
-                    left: 36px !important;
+                    top: 0px !important;
+                    left: 17px !important;
                 }
 
                 &:after {
@@ -67,7 +67,7 @@ h1 {
                     border-radius: 100%;
                     position: absolute;
                     top: inherit !important;
-                    left: 36px;
+                    left: 17px;
                 }
 
                 &.ps-timeline {
@@ -76,20 +76,29 @@ h1 {
                     padding-left: 0 !important;
                     padding-top: 120px !important;
                     border-top: 0 !important;
-                    margin-left: 25px !important;
+                    margin-left: 21px !important;
 
                     li {
                         height: 220px;
                         float: none !important;
                         width: inherit !important;
 
-                        &:nth-child(2) {
-                            .img-handler-bot {
-                                img {
-                                    width: 70px;
-                                }
+
+                        .img-handler-bot {
+                            img {
+                                margin: 0 auto 80px auto;
+                                width: 100px;
+                                height: 100px;
                             }
                         }
+                        .img-handler-top {
+                            img {
+                                margin: 0 auto 80px auto;
+                                width: 100px;
+                                height: 100px;
+                            }
+                        }
+
 
                         &:last-child {
                             margin: 0;
@@ -97,13 +106,14 @@ h1 {
                             height: 120px;
 
                             .img-handler-bot {
-                                bottom: 40px !important;
-                                width: 40% !important;
-                                margin-left: 25px !important;
-                                margin-top: 0 !important;
+                                margin: 0 auto 80px auto;
+                                width: 100px;
+                                height: 100px;
 
                                 img {
-                                    width: 100%;
+                                    margin: 80px auto 0 auto;
+                                    width: 100px;
+                                    height: 100px;
                                 }
                             }
 
@@ -200,6 +210,8 @@ h1 {
                 position: absolute;
                 left: 8px;
                 top: 49.5%;
+				margin-top: -5px;
+                margin-left: 0px;
             }
 
             &:after {
@@ -211,6 +223,7 @@ h1 {
                 position: absolute;
                 right: 8px;
                 top: 49.5%;
+				margin-top: -5px;
             }
 
             &.ps-timeline {
@@ -226,20 +239,16 @@ h1 {
                     position: relative;
 
                     span {
-                        width: 50px;
-                        height: 50px;
-                        margin-left: -25px;
-                        background: $color-white;
+                        width: 0px;
+                        height: 0px;
                         border: 4px solid $brand-color-g;
                         border-radius: 50%;
-                        box-shadow: 0 0 0 0px $color-white;
                         text-align: center;
-                        line-height: 50px -10;
                         color: $brand-color;
                         font-size: 2em;
                         font-style: normal;
                         position: absolute;
-                        top: -26px;
+                        top: -5px;
                         left: 50%;
 
                         &.ps-sp-top {
@@ -251,7 +260,7 @@ h1 {
                                 background: $brand-color-g;
                                 position: absolute;
                                 top: -50px;
-                                left: 50%;
+                                left: -1px;
                             }
 
                             &:after {
@@ -261,8 +270,8 @@ h1 {
                                 height: 8px;
                                 background: $brand-color-g;
                                 position: absolute;
-                                bottom: 90px;
-                                left: 44%;
+                                bottom: 49px;
+                                left: -4px;
                                 border-radius: 100%;
                             }
                         }
@@ -276,7 +285,7 @@ h1 {
                                 background: $brand-color-g;
                                 position: absolute;
                                 bottom: -50px;
-                                left: 50%;
+                                left: -1px;
                             }
 
                             &:after {
@@ -286,8 +295,8 @@ h1 {
                                 height: 8px;
                                 background: $brand-color-g;
                                 position: absolute;
-                                top: 90px;
-                                left: 44%;
+                                top: 49px;
+                                left: -4px;
                                 border-radius: 100%;
                             }
                         }
@@ -297,6 +306,7 @@ h1 {
                         position: absolute;
                         bottom: 0;
                         margin-bottom: 130px;
+                        margin-left: -5px;
                         width: 100%;
 
                         img {
@@ -309,6 +319,7 @@ h1 {
                         position: absolute;
                         margin-top: 60px;
                         width: 100%;
+                        margin-left: 10px;
 
                         img {
                             display: table;
@@ -325,11 +336,13 @@ h1 {
                     .ps-top {
                         position: absolute;
                         bottom: 0;
+                        width: 100%;
                         margin-bottom: 100px;
                     }
 
                     .ps-bot {
                         position: absolute;
+                        width: 100%;
                         margin-top: 35px;
                     }
                 }
