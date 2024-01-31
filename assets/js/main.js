@@ -132,7 +132,7 @@
   const typed = select('.typed')
   if (typed) {
     new Typed('.typed', {
-      strings: ["Hi!","I'm Jasmine","I'm Aaron","We're the Philiposes... ","We're the Philiposes...almost"],
+      strings: ["Hi!","I'm Jasmine","I'm Aaron","We're the Philiposes... ","We're the Philiposes...\nalmost"],
       loop: true,
       typeSpeed: 50,
       backSpeed: 20,
@@ -215,7 +215,5 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
-
-  timeline(document.querySelectorAll('.timeline'));
 
 })()
