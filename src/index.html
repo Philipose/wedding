@@ -8,7 +8,8 @@
   <title>Aaron & Jasmine's Wedding</title>
   <meta content="The Wedding Website of Jasmine George and Aaron Philipose" name="description">
   <meta content="Jasmine George, Jasmine, George, Aaron Philipose, Aaron, Philipose" name="keywords">
-  <meta http-equiv="Cache-Control" content="max-age=604800, public">
+  <meta http-equiv="Cache-Control" content="max-age=21600, public">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Favicons -->
   <link href="assets/img/favicon/favicon.ico" rel="icon">
@@ -19,10 +20,8 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lora&display=swap">
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lora&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lora&family=Quattrocento&display=swap" rel="preload" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lora&family=Quattrocento&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -55,7 +54,7 @@
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i><span>Home</span></a></li>
           <li><a href="#BridalParty" class="nav-link scrollto"><i class="bx bx-male-female"></i><span>Bridal Party</span></a></li>
-          <!-- <li><a href="#Gallery" class="nav-link scrollto"><i class="bx bx-image"></i><span>Gallery</span></a></li> -->
+          <li><a href="#Schedule" class="nav-link scrollto"><i class="bx bx-calendar"></i><span>Schedule</span></a></li>
           <li><a href="#location" class="nav-link scrollto"><i class="bx bx-map"></i><span>Location</span></a></li>
           <li><a href="#RSVP" class="nav-link scrollto"><i class="bx bx-envelope"></i><span>RSVP</span></a></li>
         </ul>
@@ -65,11 +64,14 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
-    <div class="mt-auto hero-container align-self-center" data-aos="fade-in">
+    <div class="hero-container align-self-center title-pushdown" data-aos="fade-in">
       <h1>Jasmine & Aaron</h1>
       <p><span class="typed"></span></p>
     </div>
-    <h3 class="mt-auto align-items-center hero-container fadeIn" id="date-countdown"></h3>
+    <div class="mt-auto hero-container align-self-center" data-aos="fade-in">
+      <h2>May 4th, 2024</h2>
+      <h3 id="date-countdown"></h3>
+    </div>
   </section><!-- End Hero -->
 
 
@@ -94,6 +96,54 @@
         </div>
         <div id="BridalPartyTable" class="row portfolio-container" data-aos="fade-up" data-aos-delay="100"></div>
     </section><!-- End Portfolio Section -->
+    <section id="Schedule" class="ps-timeline-sec">
+      <div class="container">
+          <ol class="ps-timeline">
+              <li>
+                  <div class="img-handler-top">
+                      <img src="../src/assets/img/schedule_wedding_ceremony.png" height="200" width="200" alt="Wedding Ceremony"/>
+                  </div>
+                  <div class="ps-bot">
+                      <p>12:30PM - 2:30PM<br/>
+                          Fort Street Presbyterian Church<br/>
+                      </p>
+                  </div>
+                  <span class="ps-sp-top"></span>
+              </li>
+              <li>
+                  <div class="img-handler-bot">
+                      <img src="../src/assets/img/schedule_photos.png" height="200" width="200" alt=""/>
+                  </div>
+                  <div class="ps-top">
+                      <p>2:30PM - 3:30PM<br/>
+                          Fort Street Presbyterian Church<br/>
+                      </p>
+                  </div>
+                  <span class="ps-sp-bot"></span>
+              </li>
+              <li>
+                  <div class="img-handler-top">
+                      <img src="../src/assets/img/schedule_cocktail_hour.png" height="200" width="200" alt=""/>
+                  </div>
+                  <div class="ps-bot">
+                      <p>5:00PM - 6:00PM<br/>
+                          The Henry Automotive Collection<br/>
+                      </p>                    </div>
+                  <span class="ps-sp-top"></span>
+              </li>
+              <li>
+                  <div class="img-handler-bot">
+                      <img src="../src/assets/img/schedule_reception.png" height="200" width="200" alt=""/>
+                  </div>
+                  <div class="ps-top">
+                      <p>6:00PM - 10:00PM<br/>
+                          The Henry Automotive Collection<br/>
+                      </p>                    </div>
+                  <span class="ps-sp-bot"></span>
+              </li>
+          </ol>
+      </div>
+    </section>
     <section id="location" class="contact">
       <div class="container">
 
@@ -165,6 +215,7 @@
   <!-- <script src="assets/js/timeline.prod.min.js"></script>
   <link href="assets/css/timeline.min.css" rel="stylesheet" /> -->
   <!-- Template Main JS File -->
+  <link href="assets/css/timeline.min.css" rel="stylesheet" />
   <script src="assets/js/main.js"></script>
 </body>
 
