@@ -20,7 +20,7 @@ function build_bridal_party() {
 
     bridal_party.forEach(function (person) {
         document.getElementById('BridalPartyTable').innerHTML +=
-            `          <div id=${person.FirstName} class="col-6 col-lg-3 col-md-5 portfolio-item">
+            `          <div id=${person.FirstName} class="col-6 col-lg-3 col-md-6 portfolio-item">
     <div class="portfolio-wrap">
       <img src="assets/img/portfolio/${person.FirstName}.webp" loading="lazy" width="512" height= "512" class="img-fluid" alt="">
       <div class="portfolio-links">
