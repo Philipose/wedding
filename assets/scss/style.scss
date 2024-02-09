@@ -638,3 +638,16 @@ $accent-colour: #785C71;
     margin: auto;
   }
   
+  /*--------------------------------------------------------------
+  # Aaron Custom
+  --------------------------------------------------------------*/
+
+  .gallery-image {
+    width: fit-content;
+    height: fit-content;
+    @include respond-to(xs) {
+      max-height: 215px;
+      width: auto;
+      height: auto;
+    }
+  }
