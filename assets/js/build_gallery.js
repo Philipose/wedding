@@ -1,4 +1,4 @@
-const numberOfImages = 14;
+const numberOfImages = 15;
 
 function populateGallery() {
     for (let i = 0; i <= numberOfImages; i++) {
