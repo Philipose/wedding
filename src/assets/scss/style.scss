@@ -10,6 +10,7 @@
 # General
 --------------------------------------------------------------*/
 $theme-colour: #71785c;
+$accent-colour: #785C71;
 @mixin respond-to($breakpoint) {
     @if $breakpoint == "xs" {
         @media screen and (max-width: 767px) {
@@ -32,14 +33,14 @@ $theme-colour: #71785c;
         }
     }
 }
-  
+
   body {
     font-family: "Lora", serif;
     color: #272829;
   }
   
   a {
-    color: #149ddd;
+    color: $accent-colour;
     text-decoration: none;
   
     &:hover {
@@ -63,7 +64,7 @@ $theme-colour: #71785c;
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #149ddd;
+    background: $accent-colour;
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -194,17 +195,17 @@ $theme-colour: #71785c;
     }
   
     a:hover i {
-      color: #149ddd;
+      color: $accent-colour;
     }
   
     .active {
       i, &:focus i {
-        color: #149ddd;
+        color: $accent-colour;
       }
     }
   
     li:hover > a i {
-      color: #149ddd;
+      color: $accent-colour;
     }
   }
   
@@ -219,7 +220,7 @@ $theme-colour: #71785c;
     font-size: 24px;
     transition: all 0.4s;
     outline: none !important;
-    background-color: #149ddd;
+    background-color: $accent-colour;
     color: #fff;
     width: 40px;
     height: 40px;
@@ -252,7 +253,7 @@ $theme-colour: #71785c;
     }
   
     width: 100%;
-    height: 100vh;
+    height: 100svh;
     background-attachment: scroll;
     background: url("../img/hero-bg.webp") top center;
     background-size: 100 100;
@@ -267,6 +268,10 @@ $theme-colour: #71785c;
     &:before {
       content: "";
       background: rgba(5, 13, 24, 0.3);
+      width: 100%;
+      height: 100svh;
+      background-size: 100 100;
+      background-attachment: scroll;
       position: absolute;
       bottom: 0;
       top: 0;
@@ -333,7 +338,7 @@ $theme-colour: #71785c;
         color: #fff;
         padding-bottom: 4px;
         letter-spacing: 1px;
-        border-bottom: 3px solid #149ddd;
+        border-bottom: 3px solid $accent-colour;
       }
     }
   }
@@ -393,7 +398,7 @@ $theme-colour: #71785c;
         display: block;
         width: 50px;
         height: 3px;
-        background: #149ddd;
+        background: $accent-colour;
         bottom: 0;
         left: 0;
       }
@@ -434,7 +439,7 @@ $theme-colour: #71785c;
         transition: all 0.3s ease-in-out;
   
         &:hover, &.filter-active {
-          color: #149ddd;
+          color: $accent-colour;
         }
   
         &:last-child {
@@ -524,10 +529,10 @@ $theme-colour: #71785c;
       justify-content: center;
       width: 54px;
       height: 54px;
-      background: #149ddd;
+      background: $accent-colour;
       border-radius: 50%;
       transition: 0.5s;
-      border: 1px solid #149ddd;
+      border: 1px solid $accent-colour;
   
       i {
         color: #fff;
@@ -540,7 +545,7 @@ $theme-colour: #71785c;
       background: #fff;
   
       i {
-        color: #149ddd;
+        color: $accent-colour;
       }
     }
   
@@ -554,7 +559,7 @@ $theme-colour: #71785c;
         color: #343a40;
   
         &:hover {
-          color: #149ddd;
+          color: $accent-colour;
         }
       }
     }

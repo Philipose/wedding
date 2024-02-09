@@ -211,9 +211,17 @@
     })
   });
 
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
+  build_gallery.addEventListener('load', function () {
+    populateGallery();
+  });
+
+  // $('.gallery-wheel').slick({
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 300,
+  //   slidesToShow: 1,
+  //   centerMode: true,
+  //   variableWidth: true
+  // });
 
 })()
