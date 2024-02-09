@@ -12,10 +12,11 @@ function populateGallery() {
     $('.gallery-wheel').slick({
         dots: false,
         infinite: false,
+        initialSlide: 1,
         slidesToShow: 1,
-        centerMode: false,
+        centerMode: true,
         variableWidth: true,
         lazyLoad: 'ondemand',
-        mobileFirst: true
+        mobileFirst: true,
       });    
 }
