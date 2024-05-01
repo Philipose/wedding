@@ -44,7 +44,7 @@ $accent-colour: #785C71;
     text-decoration: none;
   
     &:hover {
-      color: #37b3ed;
+      // color: #37b3ed;
       text-decoration: none;
     }
   }
@@ -223,6 +223,27 @@ $accent-colour: #785C71;
     background-color: $accent-colour;
     color: #fff;
     width: 110px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .streaming-button {
+    position: fixed;
+    right: 15px;
+    top: 60px;
+    z-index: 9998;
+    border: 0;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    background-color: $accent-colour;
+    color: #fff;
+    width: 190px;
     height: 40px;
     display: inline-flex;
     align-items: center;
@@ -688,3 +709,11 @@ $accent-colour: #785C71;
       margin-top: -15px;
     }
   }
+
+.off-hover {
+  a {
+    &:hover {
+      color: #fff;
+    }
+  }
+}
